@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+    background: #ff5733;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: url('images/bg13.jpg') no-repeat center center/cover;
+    color: black;
+    height: 280px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: #ff5733;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background: #e64a19;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.categories h2{
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: #ffffff;
+    width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image same size */
+.card img {
+    width: 100%;
+    height: 160px;          /* ✅ same height */
+    object-fit: cover;      /* ✅ crop & fit */
+    display: block;
+}
+
+/* Title */
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
